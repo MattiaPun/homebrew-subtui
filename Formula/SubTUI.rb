@@ -5,23 +5,23 @@
 class Subtui < Formula
   desc "A Subsonic TUI Client"
   homepage "https://github.com/MattiaPun/SubTUI"
-  version "2.9.2"
+  version "2.10.0"
   license "MIT"
 
   depends_on "mpv"
 
   on_macos do
     on_intel do
-      url "https://github.com/MattiaPun/SubTUI/releases/download/v2.9.2/SubTUI_darwin_amd64.tar.gz"
-      sha256 "f32906906ada9708d417fbddf8a4154a3959b82278db921994949546b1b9db51"
+      url "https://github.com/MattiaPun/SubTUI/releases/download/v2.10.0/SubTUI_darwin_amd64.tar.gz"
+      sha256 "f90889d0cf4bf6c78fc6b15a60bef6516caf7ae7aaa160801ec6395cab276fcf"
 
       def install
         bin.install "subtui"
       end
     end
     on_arm do
-      url "https://github.com/MattiaPun/SubTUI/releases/download/v2.9.2/SubTUI_darwin_arm64.tar.gz"
-      sha256 "e3d31fec33b71ce6dbac0d4c3961acd93f9324863d2ca349a1c110e5ba9debc2"
+      url "https://github.com/MattiaPun/SubTUI/releases/download/v2.10.0/SubTUI_darwin_arm64.tar.gz"
+      sha256 "d08aff673b8b817bbaee135d8415489d0aece7b8b7b8d55f0e0a563122a22d43"
 
       def install
         bin.install "subtui"
@@ -32,8 +32,8 @@ class Subtui < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MattiaPun/SubTUI/releases/download/v2.9.2/SubTUI_linux_amd64.tar.gz"
-        sha256 "3432084be8f623569fd11fdd13fc9490c87eb66b5a4b24940741a0cf762a16c5"
+        url "https://github.com/MattiaPun/SubTUI/releases/download/v2.10.0/SubTUI_linux_amd64.tar.gz"
+        sha256 "54ea831069e45b976be5d1dfef805678e5662fb8cdfd12ebb588176409ad17f7"
 
         def install
           bin.install "subtui"
@@ -42,8 +42,8 @@ class Subtui < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MattiaPun/SubTUI/releases/download/v2.9.2/SubTUI_linux_arm64.tar.gz"
-        sha256 "8aa83996e8219f721f248723098fff25e65ecbfd96c07562d2d6eb7e7449d3e8"
+        url "https://github.com/MattiaPun/SubTUI/releases/download/v2.10.0/SubTUI_linux_arm64.tar.gz"
+        sha256 "b4fe04161702ee1d398ffce0b6b4b3f250270c7acd1ab24241b76b8787ab9131"
 
         def install
           bin.install "subtui"
