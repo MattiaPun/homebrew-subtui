@@ -5,23 +5,23 @@
 class Subtui < Formula
   desc "A Subsonic TUI Client"
   homepage "https://github.com/MattiaPun/SubTUI"
-  version "2.11.0-beta.2"
+  version "2.10.1"
   license "MIT"
 
   depends_on "mpv"
 
   on_macos do
     on_intel do
-      url "https://github.com/MattiaPun/SubTUI/releases/download/v2.11.0-beta.2/SubTUI_darwin_amd64.tar.gz"
-      sha256 "155946f343d04404a593034ed72966275f0e9e6687803daeb89a16e262d16ff1"
+      url "https://github.com/MattiaPun/SubTUI/releases/download/v2.10.1/SubTUI_darwin_amd64.tar.gz"
+      sha256 "40ba2020f9d3cebcc2e476b791a2f734453e99e0e4588d9d14552cda36cb0d8e"
 
       def install
         bin.install "subtui"
       end
     end
     on_arm do
-      url "https://github.com/MattiaPun/SubTUI/releases/download/v2.11.0-beta.2/SubTUI_darwin_arm64.tar.gz"
-      sha256 "447b96400adfd301e454e6ed04030999d8458f0a92e7dc2ceb32d6f5ff6997de"
+      url "https://github.com/MattiaPun/SubTUI/releases/download/v2.10.1/SubTUI_darwin_arm64.tar.gz"
+      sha256 "95508c4d1d87f4045a8582b94834fd87638e9bafadb7dbe1e838390b77cc56b3"
 
       def install
         bin.install "subtui"
@@ -32,8 +32,8 @@ class Subtui < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MattiaPun/SubTUI/releases/download/v2.11.0-beta.2/SubTUI_linux_amd64.tar.gz"
-        sha256 "4df5c3106e222c1977a66c4e7e727b9d0d323e1c789fe7377e314d9bd3552354"
+        url "https://github.com/MattiaPun/SubTUI/releases/download/v2.10.1/SubTUI_linux_amd64.tar.gz"
+        sha256 "7412a3ae65a645fe4d4468927cbfe8d523703f22b3ed7bd00f2681002717f172"
 
         def install
           bin.install "subtui"
@@ -42,8 +42,8 @@ class Subtui < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MattiaPun/SubTUI/releases/download/v2.11.0-beta.2/SubTUI_linux_arm64.tar.gz"
-        sha256 "495b6112a73226fbca595bbb8b23892524fd3d08b20e679f8e2c7472a1facb92"
+        url "https://github.com/MattiaPun/SubTUI/releases/download/v2.10.1/SubTUI_linux_arm64.tar.gz"
+        sha256 "a648d7a922332f65e2d47feaea747abc6cb3a2a0ebe913542c77a9040aba7aa8"
 
         def install
           bin.install "subtui"
